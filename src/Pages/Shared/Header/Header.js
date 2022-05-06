@@ -5,7 +5,7 @@ import './Header.css';
 const Header = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="" className="background" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="info" className="background" variant="dark">
         <Container>
           <Navbar.Brand href="#home" className="fw-bold fs-3">CAR <span className="text-success">BD</span></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

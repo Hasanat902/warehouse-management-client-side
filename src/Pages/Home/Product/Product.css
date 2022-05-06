@@ -1,0 +1,13 @@
+.product{
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.product img{
+    border-radius: 10px;
+}
+
+.product-details{
+    padding: 5px;
+    text-align: center;
+}
