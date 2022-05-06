@@ -8,26 +8,26 @@ const Banner = () => {
   return (
     <div>
       <Carousel>
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={2000}>
           <img
             className="d-block w-100"
             src={banner1}
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Best Car Dealer in the town</h3>
+            <p>We are the best car dealer in this country.If you want contact with us.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={500}>
+        <Carousel.Item interval={1000}>
           <img
             className="d-block w-100"
             src={banner2}
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>We have all latest collections</h3>
+            <p>Here you find all latest collections of cars in reasonable cost.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -37,9 +37,9 @@ const Banner = () => {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>We have various brands car collections</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              From here you get various brands cars and their latest collections.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
