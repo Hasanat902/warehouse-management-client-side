@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "BMW Z4",
         "description": "This model is coming in 2021.You can take this model.This is very good looking.",
         "price": "$51,700",
@@ -9,7 +8,6 @@
         "img": "https://i.ibb.co/T4nTHFs/bmw-1.jpg"
     },
     {
-        "id": 2,
         "name": "BMW X4",
         "description": "This model is coming in 2021.It is so gorgeous in looking.It's engine is so good.",
         "price": "$55,700",
@@ -18,7 +16,6 @@
         "img": "https://i.ibb.co/518B4pg/bmw-2.jpg"
     },
     {
-        "id": 3,
         "name": "AUDI Q5",
         "description": "This is the latest collection from audi.It's design is so good.And this model has three colors.",
         "price": "$45,300",
@@ -27,7 +24,6 @@
         "img": "https://i.ibb.co/xz3NhGn/audi-1.jpg"
     },
     {
-        "id": 4,
         "name": "AUDI A4",
         "description": "This is also the latest collection from audi.It's design is so good.And this model has three colors.",
         "price": "$43,000",
@@ -36,7 +32,6 @@
         "img": "https://i.ibb.co/RTKhZgF/audi-2.jpg"
     },
     {
-        "id": 5,
         "name": "Ferrari 812",
         "description": "This is ferrari new collection car.It's design is so gorgeous.And engine is so good and fast.",
         "price": "$335,000",
@@ -45,7 +40,6 @@
         "img": "https://i.ibb.co/DW4MQ8R/ferrari-1.jpg"
     },
     {
-        "id": 6,
         "name": "Ferrari 812",
         "description": "This model is coming this year.A very nice looking car.It's engine quality is so good",
         "price": "$270,530",
@@ -54,7 +48,6 @@
         "img": "https://i.ibb.co/ChZMt31/ferrari-2.jpg"
     },
     {
-        "id": 7,
         "name": "LR DEFENDER",
         "description": "This is the latest collection from LR.It's design is so good.And this model has three colors.",
         "price": "$103,530",
@@ -63,7 +56,6 @@
         "img": "https://i.ibb.co/9cKH3fp/rrover-1.jpg"
     },
     {
-        "id": 8,
         "name": "LR DISCOVERY",
         "description": "This model is coming in 2021.It is so gorgeous in looking.It's engine is so good.",
         "price": "$61,000",
@@ -72,7 +64,6 @@
         "img": "https://i.ibb.co/D7wgKj3/rrover-2.jpg"
     },
     {
-        "id": 9,
         "name": "AVALON HYBRID",
         "description": "This is toyota new collection car.It's design is so gorgeous.And engine is so good and fast.",
         "price": "$34,850",
@@ -81,7 +72,6 @@
         "img": "https://i.ibb.co/wSPtFJ8/toyota-1.jpg"
     },
     {
-        "id": 10,
         "name": "COROLLA CROSS",
         "description": "This model is coming this year.A very nice looking car.It's engine quality is so good",
         "price": "$22,350",
