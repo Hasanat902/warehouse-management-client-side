@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "BMW Z4",
+        "description": "This model is coming in 2021.You can take this model.This is very good looking.",
+        "price": "$51,700",
+        "quantity": 13,
+        "supplier": "Shafiq Mamun",
+        "img": "https://ibb.co/rxLtZ1V"
+    },
+    {
+        "id": 2,
+        "name": "BMW X4",
+        "description": "This model is coming in 2021.It is so gorgeous in looking.It's engine is so good.",
+        "price": "$55,700",
+        "quantity": 9,
+        "supplier": "Shafiq Mamun",
+        "img": "https://ibb.co/6yPgw97"
+    },
+    {
+        "id": 3,
+        "name": "AUDI Q5",
+        "description": "This is the latest collection from audi.It's design is so good.And this model has three colors.",
+        "price": "$45,300",
+        "quantity": 11,
+        "supplier": "Sakib Mahmud",
+        "img": "https://ibb.co/ygVr05z"
+    },
+    {
+        "id": 4,
+        "name": "AUDI A4",
+        "description": "This is also the latest collection from audi.It's design is so good.And this model has three colors.",
+        "price": "$43,000",
+        "quantity": 11,
+        "supplier": "Sakib Mahmud",
+        "img": "https://ibb.co/whqJ3dk"
+    },
+    {
+        "id": 5,
+        "name": "Ferrari 812",
+        "description": "This is ferrari new collection car.It's design is so gorgeous.And engine is so good and fast.",
+        "price": "$335,000",
+        "quantity": 15,
+        "supplier": "Asif Hamid",
+        "img": "https://ibb.co/02q9rFG"
+    },
+    {
+        "id": 6,
+        "name": "Ferrari 812",
+        "description": "This model is coming this year.A very nice looking car.It's engine quality is so good",
+        "price": "$270,530",
+        "quantity": 11,
+        "supplier": "Asif Hamid",
+        "img": "https://ibb.co/wMXwLF0"
+    },
+    {
+        "id": 7,
+        "name": "LR DEFENDER",
+        "description": "This is the latest collection from LR.It's design is so good.And this model has three colors.",
+        "price": "$103,530",
+        "quantity": 13,
+        "supplier": "Shafiq Mamun",
+        "img": "https://ibb.co/wBGhrbd"
+    },
+    {
+        "id": 8,
+        "name": "LR DISCOVERY",
+        "description": "This model is coming in 2021.It is so gorgeous in looking.It's engine is so good.",
+        "price": "$61,000",
+        "quantity": 15,
+        "supplier": "Shafiq Mamun",
+        "img": "https://ibb.co/2jcYKpX"
+    },
+    {
+        "id": 9,
+        "name": "AVALON HYBRID",
+        "description": "This is toyota new collection car.It's design is so gorgeous.And engine is so good and fast.",
+        "price": "$34,850",
+        "quantity": 17,
+        "supplier": "Sakib Mahmud",
+        "img": "https://ibb.co/1rPctsB"
+    },
+    {
+        "id": 10,
+        "name": "COROLLA CROSS",
+        "description": "This model is coming this year.A very nice looking car.It's engine quality is so good",
+        "price": "$22,350",
+        "quantity": 17,
+        "supplier": "Sakib Mahmud",
+        "img": "https://ibb.co/7jXr7Bj"
+    }
+]
