@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Product from "../Product/Product";
 import './Products.css';
 
@@ -22,6 +23,7 @@ const Products = () => {
           products.slice(0, 6).map(product => <Product key={product._id} product={product}></Product>)
         }
       </div>
+      <Link className="btn btn-primary my-5 d-block mx-auto w-25" to='/manageInv'>Manage Inventories</Link>
     </div>
   );
 };
