@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
 
@@ -71,6 +72,7 @@ const Login = () => {
             <p className='mt-2'>Forgot Password?<button onClick={resetPassword} className='btn btn-link text-decoration-none'>Reset Password</button></p>
             <p>Don't have an account? <Link to='/register' className='text-decoration-none'>Please Register</Link></p>
             <ToastContainer></ToastContainer>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
