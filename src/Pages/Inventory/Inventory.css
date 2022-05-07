@@ -1,0 +1,18 @@
+.inventory-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* responsive for devices */
+
+@media only screen and (max-width: 576px){
+    .inventory-details{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px){
+    .inventory-details{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
