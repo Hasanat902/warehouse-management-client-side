@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const ManageInventories = () => {
 
@@ -32,6 +33,7 @@ const ManageInventories = () => {
     return (
         <div className='container' style={{minHeight: "79vh"}}>
             <h2 className='text-center text-primary mt-3'>Manage Inventories</h2>
+            <Link className='btn btn-info mx-right' to='/addItem'>Add Item</Link>
             <Table responsive>
                 <thead>
                     <tr>

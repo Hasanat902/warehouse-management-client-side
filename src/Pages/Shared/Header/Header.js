@@ -29,7 +29,11 @@ const Header = () => {
               <Nav.Link as={Link} to="/blogs" className="text-dark fs-6 fw-bold">Blogs</Nav.Link>
               {
                 user && 
-                <Nav.Link as={Link} to="/manageInv" className="text-dark fs-6 fw-bold">Manage Items</Nav.Link>
+                <>
+                  <Nav.Link as={Link} to="/manageInv" className="text-dark fs-6 fw-bold">Manage Items</Nav.Link>
+
+                  <Nav.Link as={Link} to="/addItem" className="text-dark fs-6 fw-bold">Add Items</Nav.Link>
+                </>
               }
 
               {
