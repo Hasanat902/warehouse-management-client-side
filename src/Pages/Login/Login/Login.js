@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -13,16 +13,19 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
+    let location = useLocation();
+    const [user] = useAuthState(auth);
     let errorMessage;
 
     const [
         signInWithEmailAndPassword,
-        user,
+        user1,
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+    let from = location.state?.from?.pathname || "/";
 
     if(error){
         errorMessage = <p className='text-danger'>Error: {error?.message}</p>;
@@ -33,7 +36,7 @@ const Login = () => {
     }
 
     if(user){
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
     const handleSubmit = event => {
