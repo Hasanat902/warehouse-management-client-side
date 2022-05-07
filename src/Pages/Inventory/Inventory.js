@@ -12,7 +12,6 @@ const Inventory = () => {
     useEffect( () => {
 
         const url = `http://localhost:5000/product/${itemId}`;
-        console.log(url);
         fetch(url)
             .then(res => res.json())
             .then(data => setItems(data))
@@ -36,6 +35,28 @@ const Inventory = () => {
         
     }
 
+    const handleSubmit = event => {
+        event.preventDefault();
+        const value = parseInt(event.target.number.value);
+        let quantity = items.quantity + value;
+
+        const updateQuantity = {quantity};
+        
+        const url = `http://localhost:5000/product/${itemId}`;
+        fetch(url, {
+            method: "PUT",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(updateQuantity)
+        })
+        .then(res => res.json())
+        .then(data => {
+            setQuantity(data);
+            event.target.reset();
+        })
+    }
+
     return (
         <div className='container' style={{minHeight: "79vh"}}>
             <h3 className='text-center text-primary mt-2 mb-5'>Inventory Item Details</h3>
@@ -51,6 +72,11 @@ const Inventory = () => {
                     <p>Supplier: {items.supplier}</p>
                     <h6 className='text-info'>Quantity: {items.quantity}</h6>
                     <button onClick={handleDelivered} className='btn btn-primary'>Delivered</button>
+                    <form onSubmit={handleSubmit}>
+                        <h6 className='mt-2'>Restock the items</h6>
+                        <input type="number" name="number" placeholder='Enter items quantity' className='me-2' />
+                        <input className='btn btn-primary' type="submit" value="Submit" />
+                    </form>
                 </div>
             </div>
         </div>
