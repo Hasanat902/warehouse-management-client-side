@@ -25,6 +25,7 @@ const AddItems = () => {
         <div className='w-50 mx-auto' style={{height: "79vh"}}>
             <h2 className='text-center text-primary mt-3'>Add Some Items</h2>
             <form className='d-flex flex-column mt-3' onSubmit={handleSubmit(onSubmit)}>
+                <input className='mb-3' placeholder='Your Email' {...register("email")} required />
                 <input className='mb-3' placeholder='Item Name' {...register("name")} />
                 <textarea className='mb-3' placeholder='Description' {...register("description")} />
                 <input className='mb-3' placeholder='Price' {...register("price")} />
