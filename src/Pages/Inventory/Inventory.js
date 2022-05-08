@@ -70,7 +70,7 @@ const Inventory = () => {
                     <p className='text-secondary'>{items.description}</p>
                     <h6 className='text-info'>Price: {items.price}</h6>
                     <p>Supplier: {items.supplier}</p>
-                    <h6 className='text-info'>Quantity: {items.quantity}</h6>
+                    <h6 className='text-info'>Quantity: {items.quantity }</h6>
                     <button onClick={handleDelivered} className='btn btn-primary'>Delivered</button>
                     <form onSubmit={handleSubmit}>
                         <h6 className='mt-2'>Restock the items</h6>
