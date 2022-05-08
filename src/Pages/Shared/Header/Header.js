@@ -4,6 +4,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../../firebase.init";
+import CustomLink from "../CustomLink/CustomLink";
 import './Header.css';
 
 const Header = () => {
@@ -25,15 +26,15 @@ const Header = () => {
               
             </Nav>
             <Nav>
-              <Nav.Link as={Link} to="/home" className="text-white fs-6 fw-bold">Home</Nav.Link>
-              <Nav.Link as={Link} to="/blogs" className="text-white fs-6 fw-bold">Blogs</Nav.Link>
+              <Nav.Link as={CustomLink} to="/home" className="text-white fs-6 fw-bold">Home</Nav.Link>
+              <Nav.Link as={CustomLink} to="/blogs" className="text-white fs-6 fw-bold">Blogs</Nav.Link>
               {
                 user && 
                 <>
-                  <Nav.Link as={Link} to="/manageInv" className="text-white fs-6 fw-bold">Manage Items</Nav.Link>
+                  <Nav.Link as={CustomLink} to="/manageInv" className="text-white fs-6 fw-bold">Manage Items</Nav.Link>
 
-                  <Nav.Link as={Link} to="/addItem" className="text-white fs-6 fw-bold">Add Items</Nav.Link>
-                  <Nav.Link as={Link} to="/myItems" className="text-white fs-6 fw-bold">My Items</Nav.Link>
+                  <Nav.Link as={CustomLink} to="/addItem" className="text-white fs-6 fw-bold">Add Items</Nav.Link>
+                  <Nav.Link as={CustomLink} to="/myItems" className="text-white fs-6 fw-bold">My Items</Nav.Link>
                 </>
               }
 
