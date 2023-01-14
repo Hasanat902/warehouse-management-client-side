@@ -12,6 +12,8 @@ const Products = () => {
       .then((data) => setProducts(data));
   }, []);
 
+  // changed something
+
   return (
     <div className="container">
       <h2 className="text-center fw-bold my-5 text-dark">Inventory Items</h2>
