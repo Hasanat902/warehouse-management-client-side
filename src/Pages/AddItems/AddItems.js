@@ -5,7 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 const AddItems = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data, e) => {
-    const url = `https://floating-tor-93105.herokuapp.com/product`;
+    const url = `https://warehouse-management-server-side.up.railway.app/product`;
     fetch(url, {
       method: "POST",
       headers: {

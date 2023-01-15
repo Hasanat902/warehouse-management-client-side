@@ -7,12 +7,10 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://floating-tor-93105.herokuapp.com/product")
+    fetch("https://warehouse-management-server-side.up.railway.app/product")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-
-  // changed something
 
   return (
     <div className="container">

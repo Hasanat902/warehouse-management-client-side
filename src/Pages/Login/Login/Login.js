@@ -47,7 +47,7 @@ const Login = () => {
 
     await signInWithEmailAndPassword(email, password);
     const { data } = await axios.post(
-      "https://floating-tor-93105.herokuapp.com/login",
+      "https://warehouse-management-server-side.up.railway.app/login",
       { email }
     );
     localStorage.setItem("accessToken", data.accessToken);
