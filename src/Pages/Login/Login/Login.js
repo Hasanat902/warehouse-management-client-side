@@ -47,7 +47,7 @@ const Login = () => {
 
     await signInWithEmailAndPassword(email, password);
     const { data } = await axios.post(
-      "https://warehouse-management-server-side.up.railway.app/login",
+      "https://warehouse-management-server-side-ofk9.onrender.com/login",
       { email }
     );
     localStorage.setItem("accessToken", data.accessToken);

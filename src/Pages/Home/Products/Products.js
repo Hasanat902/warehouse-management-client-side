@@ -6,8 +6,9 @@ import "./Products.css";
 const Products = () => {
   const [products, setProducts] = useState([]);
 
+  // get products from api
   useEffect(() => {
-    fetch("https://warehouse-management-server-side.up.railway.app/product")
+    fetch("https://warehouse-management-server-side-ofk9.onrender.com/product")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

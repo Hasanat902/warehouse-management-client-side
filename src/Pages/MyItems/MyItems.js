@@ -9,7 +9,7 @@ const MyItems = () => {
 
   useEffect(() => {
     const email = user.email;
-    const url = `https://warehouse-management-server-side.up.railway.app/myItems?email=${email}`;
+    const url = `https://warehouse-management-server-side-ofk9.onrender.com/myItems?email=${email}`;
     fetch(url, {
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -22,7 +22,7 @@ const MyItems = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure you want to delete?");
     if (proceed) {
-      const url = `https://warehouse-management-server-side.up.railway.app/myItems/${id}`;
+      const url = `https://warehouse-management-server-side-ofk9.onrender.com/myItems/${id}`;
       fetch(url, {
         method: "Delete",
       })

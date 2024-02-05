@@ -6,7 +6,7 @@ const ManageInventories = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://warehouse-management-server-side.up.railway.app/product")
+    fetch("https://warehouse-management-server-side-ofk9.onrender.com/product")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -14,7 +14,7 @@ const ManageInventories = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure you want to delete?");
     if (proceed) {
-      const url = `https://warehouse-management-server-side.up.railway.app/product/${id}`;
+      const url = `https://warehouse-management-server-side-ofk9.onrender.com/product/${id}`;
       fetch(url, {
         method: "Delete",
       })

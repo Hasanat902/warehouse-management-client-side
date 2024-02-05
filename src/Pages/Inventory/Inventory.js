@@ -8,7 +8,7 @@ const Inventory = () => {
   const [quantity, setQuantity] = useState();
 
   useEffect(() => {
-    const url = `https://warehouse-management-server-side.up.railway.app/product/${itemId}`;
+    const url = `https://warehouse-management-server-side-ofk9.onrender.com/product/${itemId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setItems(data));
@@ -19,7 +19,7 @@ const Inventory = () => {
 
     const updateQuantity = { quantity };
 
-    const url = `https://warehouse-management-server-side.up.railway.app/product/${itemId}`;
+    const url = `https://warehouse-management-server-side-ofk9.onrender.com/product/${itemId}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -38,7 +38,7 @@ const Inventory = () => {
 
     const updateQuantity = { quantity };
 
-    const url = `https://warehouse-management-server-side.up.railway.app/product/${itemId}`;
+    const url = `https://warehouse-management-server-side-ofk9.onrender.com/product/${itemId}`;
     fetch(url, {
       method: "PUT",
       headers: {
